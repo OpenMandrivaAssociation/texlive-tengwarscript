@@ -6,7 +6,7 @@
 # catalog-version 1.3
 Name:		texlive-tengwarscript
 Version:	1.3
-Release:	4
+Release:	5
 Summary:	LaTeX support for using Tengwar fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
