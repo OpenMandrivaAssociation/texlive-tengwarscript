@@ -1,13 +1,13 @@
 Name:		texlive-tengwarscript
-Version:	1.3.1
-Release:	2
+Version:	34594
+Release:	1
 Summary:	LaTeX support for using Tengwar fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tengwarscript.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tengwarscript.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tengwarscript.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tengwarscript.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tengwarscript.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tengwarscript.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +24,12 @@ wide variety of tengwar fonts that are available from the net;
 metric and map files are provided for all the supported fonts.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,7 +44,8 @@ metric and map files are provided for all the supported fonts.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
