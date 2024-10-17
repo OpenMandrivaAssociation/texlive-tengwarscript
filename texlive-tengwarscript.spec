@@ -3,7 +3,7 @@ Version:	34594
 Release:	2
 Summary:	LaTeX support for using Tengwar fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tengwarscript.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tengwarscript.doc.r%{version}.tar.xz
